@@ -13,6 +13,7 @@ public class ArrayInfo {
         }
         public void operation(Operation operation) {
                 this.array[this.pointer] += operation.getValue();
+                this.array[this.pointer] %= 256;
         }
         public int jump(Direction direction, int location) {
                 int depth = 1;
